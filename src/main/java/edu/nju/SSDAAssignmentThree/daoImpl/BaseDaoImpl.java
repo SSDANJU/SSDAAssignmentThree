@@ -1,4 +1,6 @@
 package edu.nju.SSDAAssignmentThree.daoImpl;
 
-public class BaseDaoImpl {
+import edu.nju.SSDAAssignmentThree.dao.BaseDao;
+
+public class BaseDaoImpl implements BaseDao {
 }

@@ -1,4 +1,6 @@
 package edu.nju.SSDAAssignmentThree.servieImpl;
 
-public class UserInfoServiceImpl {
+import edu.nju.SSDAAssignmentThree.service.UserInfoService;
+
+public class UserInfoServiceImpl implements UserInfoService {
 }
