@@ -1,12 +1,15 @@
 package edu.nju.SSDAAssignmentThree.model;
 
+import edu.nju.SSDAAssignmentThree.service.BorrowStrategy;
+
 public class User {
 
-    String userId;
+    private String userId;
 
-    String userName;
+    private String userName;
 
-    String userPassword;
+    private String userPassword;
+
 
     public User() {
     }
@@ -40,4 +43,6 @@ public class User {
     public void setUserPassword(String userPassword) {
         this.userPassword = userPassword;
     }
+
+
 }

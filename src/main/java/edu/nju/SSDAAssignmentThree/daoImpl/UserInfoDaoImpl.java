@@ -2,7 +2,10 @@ package edu.nju.SSDAAssignmentThree.daoImpl;
 
 import edu.nju.SSDAAssignmentThree.dao.UserInfoDao;
 import edu.nju.SSDAAssignmentThree.model.User;
+import org.springframework.stereotype.Repository;
 
+
+@Repository
 public class UserInfoDaoImpl implements UserInfoDao {
     @Override
     public boolean addOneUser(User user) {
