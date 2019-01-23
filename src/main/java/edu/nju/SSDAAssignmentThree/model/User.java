@@ -1,9 +1,12 @@
 package edu.nju.SSDAAssignmentThree.model;
 
-import edu.nju.SSDAAssignmentThree.service.BorrowStrategy;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
 public class User {
 
+    @Id
     private String userId;
 
     private String userName;

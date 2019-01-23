@@ -1,12 +1,17 @@
 package edu.nju.SSDAAssignmentThree.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Book {
 
-    String bookId;
+    @Id
+    private String bookId;
 
-    String bookName;
+    private String bookName;
 
-    String bookType;
+    private String bookType;
 
     public Book() {
     }

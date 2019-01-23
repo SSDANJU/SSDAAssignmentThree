@@ -4,10 +4,15 @@ import edu.nju.SSDAAssignmentThree.service.Reader;
 import edu.nju.SSDAAssignmentThree.service.ReaderFactory;
 import edu.nju.SSDAAssignmentThree.servieImpl.PDFReaderFactory;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class OnlineDocument {
 
     private String name;
-    private String ID;
+    @Id
+    private String Id;
     private String author;
     private String url;
     private String type;
@@ -23,9 +28,9 @@ public class OnlineDocument {
         reader.read();
     }
 
-    public OnlineDocument(String name, String ID, String author, String url, String type, String content) {
+    public OnlineDocument(String name, String Id, String author, String url, String type, String content) {
         this.name = name;
-        this.ID = ID;
+        this.Id = Id;
         this.author = author;
         this.url = url;
         this.type = type;
@@ -41,12 +46,12 @@ public class OnlineDocument {
         this.name = name;
     }
 
-    public String getID() {
-        return ID;
+    public String getId() {
+        return Id;
     }
 
-    public void setID(String ID) {
-        this.ID = ID;
+    public void setId(String Id) {
+        this.Id = Id;
     }
 
     public String getAuthor() {
