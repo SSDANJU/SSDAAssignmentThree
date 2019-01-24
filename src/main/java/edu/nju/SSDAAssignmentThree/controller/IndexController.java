@@ -40,4 +40,19 @@ public class IndexController {
     public String admin(){
         return "admin";
     }
+
+    @RequestMapping("/")
+    public String login(){
+        return "login";
+    }
+
+    @RequestMapping("/borrow")
+    public String borrow(){
+        return "borrow";
+    }
+
+    @RequestMapping("/read")
+    public String read(){
+        return "read";
+    }
 }
