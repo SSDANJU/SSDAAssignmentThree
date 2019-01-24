@@ -11,6 +11,7 @@
 	<groupId>edu.nju</groupId>
 	<artifactId>SSDAAssignmentThree</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>SSDAAssignmentThree</name>
 	<description>SSDAAssignmentThree</description>
 
@@ -45,11 +46,6 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-			<version>2.0.0.RELEASE</version>
 		</dependency>
 
 		<!--Hibernate-->
