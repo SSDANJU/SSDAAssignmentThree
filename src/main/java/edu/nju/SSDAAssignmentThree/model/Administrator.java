@@ -8,4 +8,8 @@ public class Administrator extends User {
     public Administrator(String userId, String userName, String userPassword) {
         super(userId, userName, userPassword);
     }
+
+    public boolean getNotification(Notification notification){
+        return true;
+    }
 }
