@@ -1,7 +1,8 @@
-package edu.nju.SSDAAssignmentThree.servieImpl;
+package edu.nju.SSDAAssignmentThree.factory;
 
 import edu.nju.SSDAAssignmentThree.service.Reader;
 import edu.nju.SSDAAssignmentThree.service.ReaderFactory;
+import edu.nju.SSDAAssignmentThree.servieImpl.PPTReader;
 
 public class PPTReaderFactory implements ReaderFactory {
 

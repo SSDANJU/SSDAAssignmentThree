@@ -3,6 +3,8 @@ package edu.nju.SSDAAssignmentThree.service;
 import edu.nju.SSDAAssignmentThree.model.Notification;
 import edu.nju.SSDAAssignmentThree.model.User;
 
+import java.util.ArrayList;
+
 public interface UserInfoService {
 
     boolean updateUserInfo(User user);
@@ -15,4 +17,10 @@ public interface UserInfoService {
     boolean generateNotification(Notification notification);
 
     User findUserInfo(String userId);
+
+    /**
+     * 对外数据共享接口
+     * @return
+     */
+    ArrayList<User> showAllUsers();
 }

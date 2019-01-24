@@ -7,6 +7,8 @@ import edu.nju.SSDAAssignmentThree.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+
 @Service
 public class UserInfoServiceImpl implements UserInfoService {
 
@@ -25,6 +27,11 @@ public class UserInfoServiceImpl implements UserInfoService {
 
     @Override
     public User findUserInfo(String userId) {
+        return null;
+    }
+
+    @Override
+    public ArrayList<User> showAllUsers() {
         return null;
     }
 }

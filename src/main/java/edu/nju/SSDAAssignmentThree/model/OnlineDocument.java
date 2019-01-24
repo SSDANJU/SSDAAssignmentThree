@@ -1,8 +1,8 @@
 package edu.nju.SSDAAssignmentThree.model;
 
+import edu.nju.SSDAAssignmentThree.factory.PDFReaderFactory;
 import edu.nju.SSDAAssignmentThree.service.Reader;
 import edu.nju.SSDAAssignmentThree.service.ReaderFactory;
-import edu.nju.SSDAAssignmentThree.servieImpl.PDFReaderFactory;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,17 +11,23 @@ import javax.persistence.Id;
 public class OnlineDocument {
 
     private String name;
+
     @Id
     private String Id;
+
     private String author;
+
     private String url;
+
     private String type;
+
     private String content;
+
     private Reader reader;
 
     public void createReader(){
-        ReaderFactory readerFactory=new PDFReaderFactory();
-        reader=readerFactory.createReader(type);
+        ReaderFactory readerFactory = new PDFReaderFactory();
+        reader = readerFactory.createReader(type);
     }
 
     public void show(){

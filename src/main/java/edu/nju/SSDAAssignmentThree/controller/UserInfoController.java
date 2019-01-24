@@ -6,6 +6,8 @@ import edu.nju.SSDAAssignmentThree.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+
 @RestController
 @RequestMapping("/UserInfo")
 public class UserInfoController {
@@ -29,5 +31,11 @@ public class UserInfoController {
     @ResponseBody
     public User findUserInfo(@RequestParam String userId) {
         return userInfoService.findUserInfo(userId);
+    }
+
+    @RequestMapping(value = "/showAllUsers", method = RequestMethod.POST)
+    @ResponseBody
+    public ArrayList<User> showAllUsers(){
+        return userInfoService.showAllUsers();
     }
 }
